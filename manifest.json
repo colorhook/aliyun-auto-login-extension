@@ -1,0 +1,43 @@
+{
+  "name": "Aliyun-ALE",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Aliyun Auto Login Extension",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://signin.aliyun.com/*/login.htm",
+        "https://signin.aliyun.com/*/login.htm"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon-19.png",
+      "38": "icons/icon-38.png"
+    },
+    "default_title": "Aliyun-ALE",
+    "default_popup": "popup.html"
+  }
+}
+
