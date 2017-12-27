@@ -21,8 +21,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://signin.aliyun.com/*/login.htm",
-        "https://signin.aliyun.com/*/login.htm"
+        "http://signin.aliyun.com/*/login.htm*",
+        "https://signin.aliyun.com/*/login.htm*"
       ],
       "js": [
         "scripts/contentscript.js"
