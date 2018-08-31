@@ -1,7 +1,7 @@
 {
   "name": "aliyun-auto-login-extension",
-  "version": "0.0.1",
-  "description": "login to aliyun.com",
+  "version": "0.0.2",
+  "description": "auto login plugin for signup.aliyun.com",
   "scripts": {
     "chrome-build": "cross-env TARGET=chrome gulp",
     "build": "cross-env NODE_ENV=production npm run chrome-build",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EmailThis/extension-boilerplate"
+    "url": "https://github.com/colorhook/aliyun-auto-login-extension"
   },
-  "author": "Bharani <bharani91@gmail.com> (https://github.com/bharani91)",
+  "author": "colorhook <colorhook@gmail.com>",
   "bugs": {
-    "url": "https://github.com/EmailThis/extension-boilerplate/issues"
+    "url": "https://github.com/colorhook/aliyun-auto-login-extension/issues"
   },
-  "homepage": "https://www.emailthis.me/extension-boilerplate",
+  "homepage": "https://github.com/colorhook/aliyun-auto-login-extension",
   "devDependencies": {
     "babel-core": "^6.1.2",
     "babel-preset-es2015": "^6.1.2",
