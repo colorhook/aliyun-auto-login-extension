@@ -1,6 +1,6 @@
 {
   "name": "aliyun-auto-login-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "auto login plugin for signup.aliyun.com",
   "scripts": {
     "chrome-build": "cross-env TARGET=chrome gulp",

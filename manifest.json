@@ -21,14 +21,16 @@
   "content_scripts": [
     {
       "matches": [
-        "http://signin.aliyun.com/*/login.htm*",
-        "https://signin.aliyun.com/*/login.htm*"
+        "https://signin.aliyun.com/login.htm",
+        "https://signin.aliyun.com/login.htm*",
+        "https://signin.aliyun.com/*/login.htm*",
+        "https://passport.aliyun.com/mini_login.htm*"
       ],
       "js": [
         "scripts/contentscript.js"
       ],
       "run_at": "document_end",
-      "all_frames": false
+      "all_frames": true
     }
   ],
   "browser_action": {
@@ -36,7 +38,7 @@
       "19": "icons/icon-19.png",
       "38": "icons/icon-38.png"
     },
-    "default_title": "Aliyun-ALE",
+    "default_title": "阿里云-子账号自动登录",
     "default_popup": "popup.html"
   }
 }
