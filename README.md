@@ -35,3 +35,10 @@ npm run build
 # 输出 zip 压缩包
 npm run dist
 ```
+
+### chrome 浏览器打包
+
+1. 访问 chrome://extensions/
+2. 点击打包扩展程序
+3. 扩展根目录选择 `$dir/build/chrome`
+4. 私钥文件选择 `$dir/build/aliyun-auto-login.pem` (git 不提交，维护者自己管理)
