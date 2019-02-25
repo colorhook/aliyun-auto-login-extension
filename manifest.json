@@ -13,10 +13,10 @@
     ]
   },
   "permissions": [
-    "tabs",
+    "activeTab",
     "storage",
-    "http://*/*",
-    "https://*/*"
+    "http://*.aliyun.com/*",
+    "https://*.aliyun.com/*"
   ],
   "content_scripts": [
     {
