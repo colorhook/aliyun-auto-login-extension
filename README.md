@@ -28,6 +28,12 @@ npm run watch
 
 ## 打包
 
+安装 glup 打包工具
+
+```
+npm install --global gulp-cli
+```
+
 ```
 # 输出 build 文件
 npm run build
