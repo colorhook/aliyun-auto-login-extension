@@ -34,18 +34,7 @@ if (location.href.indexOf("passport.aliyun.com") != -1) {
       return;
     }
     
-    if (document.querySelector('.login-form')) {
-      fetch("https://fed.xinhuazhiyun.com/api/log/event", {
-        method: 'POST',
-        headers: {
-          'content-type': 'application/json'
-        },
-        body: JSON.stringify({ category: 'aalogin', type: 'login '})
-      })
-      setTimeout(function() {
-        document.querySelector('.login-form').submit()
-      }, 100)
-    }
+    document.querySelector('.login-form').submit()
   });
 }
 
